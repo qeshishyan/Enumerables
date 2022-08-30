@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 
 var list1 = new MyList<int>();
+var list2 = new MyList<int>(15, 20, 67, 84);
 list1.Add(71);
 
 foreach (var item in list1)
