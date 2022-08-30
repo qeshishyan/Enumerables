@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 
-var list1 = new MyList<int>();
-var list2 = new MyList<int>(15, 20, 67, 84);
+var list1 = new MyList<int>(15, 20, 67, 84);
+var list2 = new MyList<int>();
 list1.Add(71);
 
 foreach (var item in list1)
@@ -45,9 +45,9 @@ class MyList<T> : IEnumerable<T>
         private readonly T[] _array;
         int index = -1;
 
-        public MyEnumerator(T[] list)
+        public MyEnumerator(T[] array)
         {
-            _array = list;
+            _array = array;
         }
 
         object? IEnumerator.Current
