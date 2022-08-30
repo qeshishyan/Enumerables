@@ -14,7 +14,7 @@ class MyList<T> : IEnumerable<T>
     private T[] _array;
     public MyList()
     {
-        _array = new T[0];
+   
     }
     public MyList(params T[] array)
     {
